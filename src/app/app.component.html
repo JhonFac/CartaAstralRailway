@@ -1,0 +1,15 @@
+<main class="main">
+  <button (click)="botonClik('question')">carta astral</button>
+
+  <app-header></app-header>
+
+  <div *ngIf="page === 'home'">
+    <app-home></app-home>
+  </div>
+
+  <div *ngIf="page === 'question'">
+    <app-questions></app-questions>
+  </div>
+
+  <app-footer></app-footer>
+</main>
